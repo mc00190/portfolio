@@ -1,0 +1,53 @@
+.l-visual {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 315px;
+  background-image: url("../img/l-visual.jpg");
+  background-size: cover;
+  background-position: center center;
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   top: -5px;
+  //   left: -5px;
+  //   right: -5px;
+  //   bottom: -5px;
+  //   z-index: -1;
+  //   background: inherit;
+  //   filter: blur(5px);
+  // }
+}
+.l-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 315px;
+  box-shadow: $shadow-wrapper;
+}
+.l-content {
+  width: 100%;
+  padding: $space-l 0;
+  background-color: $color-white;
+}
+.l-section {
+  margin-bottom: $space-xl;
+}
+.l-article {
+   width: 100%;
+   &--emphasis {
+     width: 100%;
+     color: $color-white;
+     background-color: $color-green;
+   }
+   &-inner {
+     width: 950px;
+     margin: 0 auto;
+     padding: $space-m 0;
+   }
+}
+.l-footer {
+  height: 50px;
+  padding-bottom: $space-m;
+  text-align: center;
+}

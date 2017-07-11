@@ -1,0 +1,9 @@
+.p-carousel {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  transition: $transition-carousel;
+}
+.p-carousel.slick-initialized {
+  opacity: 1;
+}

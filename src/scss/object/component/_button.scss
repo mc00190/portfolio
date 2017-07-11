@@ -1,0 +1,28 @@
+.c-button {
+  background-color: transparent;
+  border: none;
+  &-large {
+    @extend .c-button;
+    width: 450px;
+    height: 90px;
+    margin: 0 auto;
+  }
+}
+.c-button-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  vertical-align: middle;
+  border-radius: $radius-button;
+  transition: $transition-button;
+  &--submit {
+    @extend .c-button-inner;
+    color: $color-white;
+    text-decoration: none;
+    text-shadow: $shadow-button_submit;
+    background-color: $color-yellow;
+    box-shadow: $shadow-button_submit;
+  }
+}

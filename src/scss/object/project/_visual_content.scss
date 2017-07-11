@@ -1,0 +1,19 @@
+.p-visual {
+  display: table;
+  width: 950px;
+  height: inherit;
+  margin: 0 auto;
+}
+.p-visual__title {
+  display: table-cell;
+  height: inherit;
+  color: $color-white;
+  text-align: center;
+  vertical-align: middle;
+  & > .c-heading--xlarge {
+    display: block;
+  }
+  & > .c-text--xlarge {
+    display: block;
+  }
+}

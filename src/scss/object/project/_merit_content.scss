@@ -1,0 +1,39 @@
+.p-merit {
+  .c-text--large {
+    line-height: $line-height-l;
+  }
+}
+.p-merit-inner {
+  display: flex;
+  margin-bottom: $space-s;
+}
+.p-merit-inner__summary {
+  width: 450px;
+  padding-right: $space-s;
+  & > .c-text--large {
+    margin-bottom: $space-xs;
+  }
+}
+.p-merit-inner__graph {
+  width: 460px;
+  padding: $space-xs 2.5px $space-xs $space-xs;
+  background-color: $color-white;
+  box-shadow: $shadow-graph;
+  opacity: 0;
+  transition: $transition-graph;
+  &.is-view {
+    opacity: 1;
+  }
+}
+.p-merit__result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 460px;
+  .c-heading--small {
+    margin-bottom: $space-xs;
+  }
+  .c-text--3xlarge_normal {
+    line-height: .8;
+  }
+}

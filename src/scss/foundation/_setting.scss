@@ -1,0 +1,49 @@
+/* color */
+$color-white: #ffffff;
+$color-pale_gray: #f4f4f4;
+$color-gray: #cacaca;
+$color-dark_gray: #888888;
+$color-green: #038EA5;
+$color-green_opacity: rgba(3, 142, 165, .8);
+$color-yellow: #f9b630;
+$color-orange: #FE382B;
+
+/* font-size */
+$font-xs: 10px;
+$font-s: 12px;
+$font-m: 14px;
+$font-l: 16px;
+$font-xl: 24px;
+$font-2xl: 48px;
+$font-3xl: 64px;
+
+/* line-height */
+$line-height-s: 1;
+$line-height-m: 1.5;
+$line-height-l: 1.7;
+
+/* margin padding */
+$space-xs: 12.5px;
+$space-s: 25px;
+$space-m: 50px;
+$space-l: 100px;
+$space-xl: 200px;
+
+/* box-shadow */
+$shadow-wrapper: 0 -4px 2px rgba(136, 136, 136, .15);
+$shadow-carousel_arrow: 2px 4px 2px rgba(61, 75, 76, .15);
+$shadow-card: 2px 4px 2px rgba(61, 75, 76, .15);
+$shadow-graph: 2px 4px 2px rgba(61, 75, 76, .25);
+$shadow-button_toggle: 2px 4px 2px rgba(61, 75, 76, .25);
+$shadow-button_submit: 2px 4px 2px rgba(153, 104, 32, .2);
+
+/* border-radius */
+$radius-button : 5px;
+
+/* transition */
+$transition-carousel: all 2s ease-out;
+$transition-carousel_arrow : all 0.5s ease-out;
+$transition-carousel_mask : all 0.5s ease-out;
+$transition-card : all 1s ease-out;
+$transition-graph : all 0.5s ease-out;
+$transition-button : all 0.5s ease-out;

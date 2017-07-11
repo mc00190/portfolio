@@ -1,0 +1,126 @@
+.c-card {
+  box-sizing: border-box;
+  width: 300px;
+  height: 185px;
+  margin-bottom: $space-s;
+  padding: $space-s;
+  background-color: $color-white;
+  border: 1px solid $color-pale_gray;
+  box-shadow: $shadow-card;
+  transition: $transition-card;
+  &:before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+  &--comment {
+    @extend .c-card;
+    &:before {
+      background-image: url("../img/c-card_comment.svg");
+    }
+    &.is-move {
+      transform: translate(-650px, 0);
+    }
+  }
+  &--leader {
+    @extend .c-card;
+    &:before {
+      background-image: url("../img/c-card_leader.svg");
+    }
+    &.is-move {
+      transform: translate(-975px, 0);
+    }
+  }
+  &--sort {
+    @extend .c-card;
+    &:before {
+      background-image: url("../img/c-card_sort.svg");
+    }
+    &.is-move {
+      transform: translate(650px, 0);
+    }
+  }
+  &--definition {
+    @extend .c-card;
+    &:before {
+      background-image: url("../img/c-card_definition.svg");
+    }
+    &.is-move {
+      transform: translate(-650px, 0);
+    }
+  }
+  &--wireframe {
+    @extend .c-card;
+    &:before {
+      background-image: url("../img/c-card_wireframe.svg");
+    }
+    &.is-move {
+      transform: translate(975px, 0);
+    }
+  }
+  &--schedule {
+    @extend .c-card;
+    &:before {
+      background-image: url("../img/c-card_schedule.svg");
+    }
+    &.is-move {
+      transform: translate(650px, 0);
+    }
+  }
+  &--html {
+    @extend .c-card;
+    &:before {
+      background-image: url("../img/c-card_html.svg");
+    }
+    &.is-move {
+      transform: translate(-650px, 0);
+    }
+  }
+  &--css {
+    @extend .c-card;
+    &:before {
+      background-image: url("../img/c-card_css.svg");
+    }
+    &.is-move {
+      transform: translate(975px, 0);
+    }
+  }
+  &--javascript {
+    @extend .c-card;
+    &:before {
+      background-image: url("../img/c-card_javascript.svg");
+    }
+    &.is-move {
+      transform: translate(650px, 0);
+    }
+  }
+  &--cms {
+    @extend .c-card;
+    &:before {
+      background-image: url("../img/c-card_cms.svg");
+    }
+    &.is-move {
+      transform: translate(-650px, 0);
+    }
+  }
+  &--developer {
+    @extend .c-card;
+    &:before {
+      background-image: url("../img/c-card_developer.svg");
+    }
+    &.is-move {
+      transform: translate(-975px, 0);
+    }
+  }
+  &--version {
+    @extend .c-card;
+    &:before {
+      background-image: url("../img/c-card_version.svg");
+    }
+    &.is-move {
+      transform: translate(975px, 0);
+    }
+  }
+}

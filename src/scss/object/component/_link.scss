@@ -1,0 +1,17 @@
+.c-link {
+  &--external {
+    &:after {
+      display: inline-block;
+      content: "";
+      width: 18px;
+      height: 18px;
+      padding-left: 2px;
+      vertical-align: text-top;
+      background-image: url("../img/c-link_external.svg");
+      background-size: 100% 100%;
+    }
+    &:last-child {
+      padding-left: $space-xs;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.p-tab {}
+.p-tab-content {
+  height: 380px;
+  margin-bottom: $space-m;
+}
+.p-tab-plan {
+  display: none;
+  opacity: 0;
+  &.is-show {
+    display: block;
+    opacity: 1;
+    animation-duration: 0.5s;
+    animation-name: fade-in;
+  }
+  &-01 {
+    @extend .p-tab-plan;
+  }
+  &-02 {
+    @extend .p-tab-plan;
+  }
+  &-03 {
+    @extend .p-tab-plan;
+  }
+}
+@keyframes fade-in {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+.p-tab-plan__summary {
+  margin-bottom: $space-m;
+}
+.p-tab-plan__more {
+  margin-bottom: $space-m;
+}
+.p-tab-plan__recommend {}
+.p-tab .c-toggle a {
+  color: $color-white;
+  text-decoration: none;
+}
+.p-tab .c-toggle .is-active a {
+  color: $color-green;
+}

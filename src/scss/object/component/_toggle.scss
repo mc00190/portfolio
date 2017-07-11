@@ -1,0 +1,37 @@
+.c-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 900px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: $radius-button;
+  box-shadow: $shadow-graph;
+}
+.c-toggle__button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: inherit;
+  border: 1px solid $color-white;
+  cursor: pointer;
+  &-01 {
+    @extend .c-toggle__button;
+    border-radius: $radius-button 0 0 $radius-button;
+    border-right: none;
+  }
+  &-02 {
+    @extend .c-toggle__button;
+  }
+  &-03 {
+    @extend .c-toggle__button;
+    border-radius: 0 $radius-button $radius-button 0;
+    border-left: none;
+  }
+  &.is-active {
+    color: $color-green;
+    background-color: $color-white;
+  }
+}
