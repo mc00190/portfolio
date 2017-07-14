@@ -1,3 +1,19 @@
 .l-footer {
+  height: 50px;
+  padding-bottom: $space-m;
+  text-align: center;
   background-color: $color-white;
+}
+.l-footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: $space-xs;
+  li {
+    width: 48px;
+    height: 48px;
+  }
 }
