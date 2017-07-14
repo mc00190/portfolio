@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   opacity: 0;
+  -webkit-transition: $transition-carousel;
   transition: $transition-carousel;
 }
 .p-carousel.slick-initialized {

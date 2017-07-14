@@ -4,6 +4,8 @@
   }
 }
 .p-merit-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: $space-s;
 }
@@ -18,16 +20,23 @@
   width: 460px;
   padding: $space-xs 2.5px $space-xs $space-xs;
   background-color: $color-white;
+  -webkit-box-shadow: $shadow-graph;
   box-shadow: $shadow-graph;
   opacity: 0;
+  -webkit-transition: $transition-graph;
   transition: $transition-graph;
   &.is-view {
     opacity: 1;
   }
 }
 .p-merit__result {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 460px;
   .c-heading--small {

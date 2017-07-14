@@ -139,15 +139,29 @@ $(window).on('load' , function(){
       }
     }]
   });
+
+  var ua = navigator.userAgent;
+  if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+    $('.js-carousel-detail').touchstart (function(){
+      $(this).toggleClass('is-view');
+    });
+  } else {
+    $('.js-carousel-detail').hover (function(){
+      $(this).toggleClass('is-view');
+    });
+  }
+
 });
+
+
 
 //tab
 $(function(){
 
-  var $plan = $('.js-p-tab-plan');
-  var $planFirst = $('.js-p-tab-plan:first');
-  var $tab = $('.js-c-toggle__button');
-  var $tabFirst = $('.js-c-toggle__button:first');
+  var $plan = $('.js-plan');
+  var $planFirst = $('.js-plan:first');
+  var $tab = $('.js-toggle');
+  var $tabFirst = $('.js-toggle:first');
 
   $planFirst.addClass('is-show');
   $tabFirst.addClass('is-active');

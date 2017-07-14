@@ -66,6 +66,8 @@
   width: 30px;
   height: 30px;
   padding: 0;
+  margin-top: -7.5px;
+  -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: transparent;
   border: none;
@@ -112,7 +114,9 @@
   background-image: url("../img/c-carousel_prev.svg");
   background-size: 100% 100%;
   border-radius: 50%;
+  -webkit-box-shadow: $shadow-carousel_arrow;
   box-shadow: $shadow-carousel_arrow;
+  -webkit-transition: $transition-carousel_arrow;
   transition: $transition-carousel_arrow;
 }
 [dir='rtl'] .slick-prev:before {
@@ -134,7 +138,9 @@
   background-image: url("../img/c-carousel_next.svg");
   background-size: 100% 100%;
   border-radius: 50%;
+  -webkit-box-shadow: $shadow-carousel_arrow;
   box-shadow: $shadow-carousel_arrow;
+  -webkit-transition: $transition-carousel_arrow;
   transition: $transition-carousel_arrow;
 }
 [dir='rtl'] .slick-next:before {

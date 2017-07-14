@@ -9,13 +9,20 @@
   }
 }
 .c-button-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: inherit;
   height: inherit;
   vertical-align: middle;
   border-radius: $radius-button;
+  -webkit-transition: $transition-button;
   transition: $transition-button;
   &--submit {
     @extend .c-button-inner;
@@ -23,6 +30,7 @@
     text-decoration: none;
     text-shadow: $shadow-button_submit;
     background-color: $color-yellow;
+    -webkit-box-shadow: $shadow-button_submit;
     box-shadow: $shadow-button_submit;
   }
 }

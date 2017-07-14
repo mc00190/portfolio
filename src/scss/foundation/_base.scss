@@ -5,7 +5,6 @@ body {
   font-weight: lighter;
   font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
   line-height: $line-height-m;
-  transition: all .1s ease;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -21,6 +20,7 @@ p {
 
 a {
   color: $color-green;
+  transition: $transition-link;
   &:hover {
     opacity: .7;
   }
