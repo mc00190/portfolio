@@ -9,6 +9,10 @@
   border: 1px solid $color-pale_gray;
   -webkit-box-shadow: $shadow-card;
   box-shadow: $shadow-card;
+  &:focus {
+    outline: none;
+    background: transparent;
+  }
 }
 .c-carousel__title {
   display: -webkit-box;
@@ -93,4 +97,19 @@
   -ms-flex-pack: end;
   justify-content: flex-end;
   height: 40px;
+}
+
+/* smartdevice */
+@media screen and (max-width: 667px) {
+  .c-carousel {
+    margin: 0 6.25px $space-xs;
+    padding: 0 $space-xs;
+  }
+  .c-carousel__link .c-link--external {
+    font-size: $font-s;
+    &:after {
+      width: 16px;
+      height: 16px;
+    }
+  }
 }
