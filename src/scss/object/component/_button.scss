@@ -34,3 +34,16 @@
     box-shadow: $shadow-button_submit;
   }
 }
+
+/* smartdevice */
+@media screen and (max-width: 667px) {
+  .c-button {
+    &-large {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;;
+      width: 100%;
+      height: 60px;
+      padding: 0 10px;
+    }
+  }
+}

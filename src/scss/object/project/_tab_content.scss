@@ -66,3 +66,20 @@
 .p-tab .c-toggle .is-active a {
   color: $color-green;
 }
+
+/* smartdevice */
+@media screen and (max-width: 667px) {
+  .p-tab {
+    padding: 0 $space-xs;
+  }
+  .p-tab-content {
+    height: auto;
+    margin-bottom: $space-m;
+  }
+  .p-tab-plan__summary {
+    margin-bottom: $space-s;
+  }
+  .p-tab-plan__more {
+    margin-bottom: $space-s;
+  }
+}

@@ -61,3 +61,22 @@
     text-align: center;
   }
 }
+
+/* smartdevice */
+@media screen and (max-width: 667px) {
+  .c-heading--xlarge {
+    font-size: $font-2xl;
+  }
+  .c-heading--large {
+    margin-bottom: $space-xs;
+    font-size: $font-xl;
+  }
+  .c-heading--medium {
+    margin-bottom: $space-xxs;
+    font-size: $font-l;
+  }
+  .c-heading--small {
+    margin-bottom: $space-xxs;
+    font-size: $font-m;
+  }
+}

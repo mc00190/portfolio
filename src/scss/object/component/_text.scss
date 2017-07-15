@@ -89,3 +89,25 @@
     text-align: center;
   }
 }
+
+/* smartdevice */
+@media screen and (max-width: 667px) {
+  .c-text--3xlarge {
+    font-size: $font-3xl;
+  }
+  .c-text--2xlarge {
+    font-size: $font-2xl;
+  }
+  .c-text--xlarge {
+    font-size: $font-l;
+  }
+  .c-text--large {
+    font-size: $font-m;
+  }
+  .c-text--medium {
+    font-size: $font-s;
+  }
+  .c-text--small {
+    font-size: $font-xs;
+  }
+}

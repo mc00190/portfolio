@@ -17,6 +17,7 @@
   }
 }
 .p-merit-inner__graph {
+  overflow: hidden;
   width: 460px;
   padding: $space-xs 2.5px $space-xs $space-xs;
   background-color: $color-white;
@@ -29,7 +30,7 @@
     opacity: 1;
   }
 }
-.p-merit__result {
+.p-merit-result {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,5 +45,58 @@
   }
   .c-text--3xlarge_normal {
     line-height: .8;
+  }
+}
+
+/* smartdevice */
+@media screen and (max-width: 667px) {
+  .p-merit {
+    padding: 0 $space-xs;
+    .c-heading--large {
+      line-height: 1.25;
+    }
+  }
+  .p-merit-inner {
+    display: block;
+    margin-bottom: 0;
+    &:after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 1px;
+      margin-top: $space-s;
+      border-bottom: 1px solid rgba(0, 0, 0, .2);
+      -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
+    }
+  }
+  .p-merit-inner__summary {
+    width: 100%;
+    padding: 0;
+  }
+  .p-merit-inner__graph {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .p-merit-inner__summary {
+    margin-bottom: $space-s;
+  }
+  .p-merit-result {
+    display: block;
+    width: 100%;
+    text-align: center;
+    .p-merit-result__value {
+      padding: $space-s 0;
+      border-bottom: 1px solid rgba(0, 0, 0, .2);
+      -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .p-merit-inner__graph {
+    padding: 6.25px 2.5px 6.25px 0;
   }
 }

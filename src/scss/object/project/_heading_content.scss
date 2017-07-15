@@ -1,3 +1,10 @@
 .p-heading {
   margin-bottom: $space-m;
 }
+/* smartdevice */
+@media screen and (max-width: 667px) {
+  .p-heading {
+    margin-bottom: $space-s;
+    padding: 0 $space-xs;
+  }
+}
