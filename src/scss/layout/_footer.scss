@@ -4,7 +4,7 @@
   text-align: center;
   background-color: $color-white;
 }
-.l-footer__link {
+.l-footer-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,8 +12,20 @@
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: $space-xs;
-  li {
-    width: 48px;
-    height: 48px;
+}
+.l-footer-list__link {
+  width: 48px;
+  height: 48px;
+  a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    background-repeat: no-repeat;
+  }
+  &--github {
+    @extend .l-footer-list__link;
+    a {
+      background-image: url("../img/c__link--github.svg");
+    }
   }
 }
