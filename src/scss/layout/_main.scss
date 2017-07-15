@@ -5,22 +5,9 @@
   height: 315px;
   background: linear-gradient(-45deg, rgba(249, 182, 48, .5), rgba(3, 142, 165, .5)),
 url("../img/l-visual.jpg");
-  // background: url("../img/l-visual.jpg");
-  background-size: cover;
-  background-position: center center;
-  // &:before {
-  //   content: '';
-  //   position: absolute;
-  //   top: -5px;
-  //   left: -5px;
-  //   right: -5px;
-  //   bottom: -5px;
-  //   z-index: -1;
-  //   background: inherit;
-  //   filter: blur(5px);
-  // }
 }
 .l-wrapper {
+  overflow-x: hidden;
   position: relative;
   width: 100%;
   height: 100%;
@@ -50,8 +37,27 @@ url("../img/l-visual.jpg");
    }
 }
 
+/* tablet */
+@media screen and (max-width: 950px) {
+  .l-visual {
+    width: 100%;
+  }
+  .l-article {
+    &-inner {
+      width: 100%;
+    }
+  }
+}
+
 /* smartdevice */
 @media screen and (max-width: 667px) {
+  .l-visual {
+    width: 100%;
+    height: 150px;
+  }
+  .l-wrapper {
+    margin-top: 150px;
+  }
   .l-content {
     padding: $space-m 0;
   }

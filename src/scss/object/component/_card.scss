@@ -140,6 +140,91 @@
   }
 }
 
+/* tablet */
+@media screen and (max-width: 950px) {
+  .c-card {
+    width: calc(50% - 12.5px);
+    &:nth-child(odd) {
+      margin-right: $space-xs;
+    }
+    &:nth-child(even) {
+      margin-left: $space-xs;
+    }
+    &--comment {
+      &.is-move {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(200%, 0);
+      }
+    }
+    &--leader {
+      &.is-move {
+        -webkit-transform: translate(100%, 0);
+        transform: translate(-200%, 0);
+      }
+    }
+    &--sort {
+      &.is-move {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(200%, 0);
+      }
+    }
+    &--definition {
+      &.is-move {
+        -webkit-transform: translate(100%, 0);
+        transform: translate(-200%, 0);
+      }
+    }
+    &--wireframe {
+      &.is-move {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(200%, 0);
+      }
+    }
+    &--schedule {
+      &.is-move {
+        -webkit-transform: translate(100%, 0);
+        transform: translate(-200%, 0);
+      }
+    }
+    &--html {
+      &.is-move {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(200%, 0);
+      }
+    }
+    &--css {
+      &.is-move {
+        -webkit-transform: translate(100%, 0);
+        transform: translate(-200%, 0);
+      }
+    }
+    &--javascript {
+      &.is-move {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(200%, 0);
+      }
+    }
+    &--cms {
+      &.is-move {
+        -webkit-transform: translate(100%, 0);
+        transform: translate(-200%, 0);
+      }
+    }
+    &--developer {
+      &.is-move {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(200%, 0);
+      }
+    }
+    &--version {
+      &.is-move {
+        -webkit-transform: translate(100%, 0);
+        transform: translate(-200%, 0);
+      }
+    }
+  }
+}
+
 /* smartdevice */
 @media screen and (max-width: 667px) {
   .c-card {
@@ -147,6 +232,12 @@
     height: 185px;
     margin-bottom: $space-xs;
     padding: $space-s;
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+    &:nth-child(even) {
+      margin-left: 0;
+    }
     &--comment {
       &.is-move {
         -webkit-transform: translate(-100%, 0);

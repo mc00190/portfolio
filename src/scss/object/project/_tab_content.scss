@@ -67,6 +67,16 @@
   color: $color-green;
 }
 
+/* tablet */
+@media screen and (max-width: 950px) {
+  .p-tab {
+    padding: 0 $space-s;
+  }
+  .p-tab-content {
+    height: auto;
+  }
+}
+
 /* smartdevice */
 @media screen and (max-width: 667px) {
   .p-tab {
