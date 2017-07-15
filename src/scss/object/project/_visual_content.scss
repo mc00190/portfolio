@@ -19,6 +19,13 @@
 }
 
 /* smartdevice */
+@media screen and (max-width: 950px) {
+  .p-visual {
+    width: 100%;
+  }
+}
+
+/* smartdevice */
 @media screen and (max-width: 667px) {
   .p-visual {
     display: table;

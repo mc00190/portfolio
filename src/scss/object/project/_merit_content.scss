@@ -48,6 +48,31 @@
   }
 }
 
+/* tablet */
+@media screen and (max-width: 950px) {
+  .p-merit {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 $space-s;
+  }
+  .p-merit-inner {
+    display: block;
+  }
+  .p-merit-inner__summary {
+    width: 100%;
+    margin-bottom: $space-s;
+  }
+  .p-merit-inner__graph {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 75%;
+  }
+  .p-merit-result {
+    width: 75%;
+  }
+}
+
 /* smartdevice */
 @media screen and (max-width: 667px) {
   .p-merit {
@@ -74,13 +99,13 @@
     width: 100%;
     padding: 0;
   }
+  .p-merit-inner__summary {
+    margin-bottom: $space-s;
+  }
   .p-merit-inner__graph {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
-  }
-  .p-merit-inner__summary {
-    margin-bottom: $space-s;
   }
   .p-merit-result {
     display: block;
