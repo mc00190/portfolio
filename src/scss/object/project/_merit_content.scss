@@ -121,6 +121,11 @@
 }
 
 @media screen and (max-width: 375px) {
+  .p-merit {
+    .p-merit-inner__summary br {
+      display: none;
+    }
+  }
   .p-merit-inner__graph {
     padding: 6.25px 2.5px 6.25px 0;
   }

@@ -1,4 +1,11 @@
-.p-tab {}
+.p-tab {
+  .c-heading--large {
+    text-align: center;
+  }
+  .c-text--large {
+    text-align: center;
+  }
+}
 .p-tab-content {
   height: 380px;
   margin-bottom: $space-m;
@@ -91,5 +98,19 @@
   }
   .p-tab-plan__more {
     margin-bottom: $space-s;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .p-tab {
+    .c-text--large {
+      text-align: left;
+    }
+    .p-tab-plan__recommend {
+      text-align: center;
+    }
+    br {
+      display: none;
+    }
   }
 }

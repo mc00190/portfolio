@@ -28,5 +28,8 @@
     flex: none;
     width: 100%;
     padding: 0 $space-xs;
+    br {
+      display: none;
+    }
   }
 }
