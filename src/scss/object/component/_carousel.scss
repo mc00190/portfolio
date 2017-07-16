@@ -60,6 +60,15 @@
     -webkit-transform: skewY(-45deg);
     transform: skewY(-45deg);
   }
+  &:after {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: $color-green;
+  }
 }
 .c-carousel-detail-mask__summary {
   display: -webkit-box;
