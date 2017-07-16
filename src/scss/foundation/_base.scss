@@ -24,6 +24,10 @@ a {
   &:hover {
     opacity: .7;
   }
+  &:focus {
+    outline: none;
+    background: transparent;
+  }
 }
 
 ul,ol {

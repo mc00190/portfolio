@@ -1,65 +1,17 @@
 .c-heading--xlarge {
   font-size: $font-3xl;
-  &_normal {
-    @extend .c-heading--xlarge;
-    font-weight: normal;
-  }
-  &_bold {
-    @extend .c-heading--xlarge;
-    font-weight: bold;
-  }
-  &_center {
-    @extend .c-heading--xlarge;
-    text-align: center;
-  }
 }
 .c-heading--large {
   margin-bottom: $space-s;
   font-size: $font-2xl;
-  &_normal {
-    @extend .c-heading--large;
-    font-weight: normal;
-  }
-  &_bold {
-    @extend .c-heading--large;
-    font-weight: bold;
-  }
-  &_center {
-    @extend .c-heading--large;
-    text-align: center;
-  }
 }
 .c-heading--medium {
   margin-bottom: $space-xs;
   font-size: $font-xl;
-  &_normal {
-    @extend .c-heading--medium;
-    font-weight: normal;
-  }
-  &_bold {
-    @extend .c-heading--medium;
-    font-weight: bold;
-  }
-  &_center {
-    @extend .c-heading--medium;
-    text-align: center;
-  }
 }
 .c-heading--small {
   margin-bottom: $space-xs;
   font-size: $font-l;
-  &_normal {
-    @extend .c-heading--small;
-    font-weight: normal;
-  }
-  &_bold {
-    @extend .c-heading--small;
-    font-weight: bold;
-  }
-  &_center {
-    @extend .c-heading--small;
-    text-align: center;
-  }
 }
 
 /* smartdevice */

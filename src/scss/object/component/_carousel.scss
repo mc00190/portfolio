@@ -44,22 +44,22 @@
   width: 75%;
   height: 100%;
   margin-left: -75%;
-  // margin-left: calc(-75% + 5px);
   background-color: $color-green;
   -webkit-transition: $transition-carousel_mask;
   transition: $transition-carousel_mask;
-  // &:after {
-  //   position: absolute;
-  //   top: 50%;
-  //   right: -5px;
-  //   content: "";
-  //   width: 10px;
-  //   height: 10px;
-  //   margin-top: -5px;
-  //   background-color: $color-green;
-  //   -webkit-transform: rotate(45deg);
-  //   transform: rotate(45deg);
-  // }
+  &:before {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    content: "";
+    width: 20px;
+    height: 40px;
+    background-color: $color-green;
+    -webkit-box-shadow: $shadow-carousel_arrow;
+    box-shadow: $shadow-carousel_arrow;
+    -webkit-transform: skewY(-45deg);
+    transform: skewY(-45deg);
+  }
 }
 .c-carousel-detail-mask__summary {
   display: -webkit-box;
