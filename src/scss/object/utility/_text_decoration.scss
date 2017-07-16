@@ -1,3 +1,39 @@
+/* color */
+.u-text {
+  &--green {
+  color: $color-green;
+  }
+  &--yellow {
+  color: $color-yellow;
+  }
+  &--orange {
+  color: $color-orange;
+  }
+}
+
+/* weight */
+.u-text {
+  &--normal {
+    font-weight: normal;
+  }
+  &--bold {
+    font-weight: bold;
+  }
+}
+
+/* position */
+.u-text {
+  &--center {
+  text-align: center;
+  }
+  &--left {
+  text-align: left;
+  }
+  &--right {
+  text-align: right;
+  }
+}
+
 /* ellipsis */
 .u-text--ellipsis {
   overflow: hidden;

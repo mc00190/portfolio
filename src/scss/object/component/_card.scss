@@ -5,6 +5,7 @@
   height: 185px;
   margin-bottom: $space-s;
   padding: $space-s;
+  text-align: center;
   background-color: $color-white;
   border: 1px solid $color-pale_gray;
   -webkit-box-shadow: $shadow-card;
@@ -309,6 +310,24 @@
         -webkit-transform: translate(100%, 0);
         transform: translate(100%, 0);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .c-card {
+    .c-text--medium {
+      width: 75%;
+      margin: 0 auto;
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .c-card {
+    .c-text--medium {
+      width: 100%;
     }
   }
 }

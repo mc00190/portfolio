@@ -1,93 +1,21 @@
 /* font */
 .c-text--3xlarge {
   font-size: $font-3xl;
-  &_normal {
-    @extend .c-text--3xlarge;
-    font-weight: normal;
-  }
-  &_bold {
-    @extend .c-text--3xlarge;
-    font-weight: bold;
-  }
-  &_center {
-    @extend .c-text--3xlarge;
-    text-align: center;
-  }
 }
 .c-text--2xlarge {
   font-size: $font-2xl;
-  &_normal {
-    @extend .c-text--2xlarge;
-    font-weight: normal;
-  }
-  &_bold {
-    @extend .c-text--2xlarge;
-    font-weight: bold;
-  }
-  &_center {
-    @extend .c-text--2xlarge;
-    text-align: center;
-  }
 }
 .c-text--xlarge {
   font-size: $font-xl;
-  &_normal {
-    @extend .c-text--xlarge;
-    font-weight: normal;
-  }
-  &_bold {
-    @extend .c-text--xlarge;
-    font-weight: bold;
-  }
-  &_center {
-    @extend .c-text--xlarge;
-    text-align: center;
-  }
 }
 .c-text--large {
   font-size: $font-l;
-  &_normal {
-    @extend .c-text--large;
-    font-weight: normal;
-  }
-  &_bold {
-    @extend .c-text--large;
-    font-weight: bold;
-  }
-  &_center {
-    @extend .c-text--large;
-    text-align: center;
-  }
 }
 .c-text--medium {
   font-size: $font-m;
-  &_normal {
-    @extend .c-text--medium;
-    font-weight: normal;
-  }
-  &_bold {
-    @extend .c-text--medium;
-    font-weight: bold;
-  }
-  &_center {
-    @extend .c-text--medium;
-    text-align: center;
-  }
 }
 .c-text--small {
   font-size: $font-s;
-  &_normal {
-    @extend .c-text--small;
-    font-weight: normal;
-  }
-  &_bold {
-    @extend .c-text--small;
-    font-weight: bold;
-  }
-  &_center {
-    @extend .c-text--small;
-    text-align: center;
-  }
 }
 
 /* smartdevice */
