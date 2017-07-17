@@ -62,7 +62,6 @@
 <g id="c-card_x5F_html">
 </g>
 <g id="c-card_x5F_sort">
-	<rect class="st0" width="64" height="64"/>
 	<g>
 		<g>
 			<path class="st4" d="M14.5,57c-0.9,0-1.7-0.8-1.7-1.7V14.7c0-0.9,0.8-1.7,1.7-1.7h21.7l7.7,7.7v34.6c0,0.9-0.8,1.7-1.7,1.7H14.5z
@@ -95,10 +94,10 @@
 		<g>
 			<path class="st2" d="M42.9,20.5c-1.2,0-2.2-1-2.2-2.2v-5.8l8,8H42.9z"/>
 		</g>
+		<rect x="20" y="31.5" class="st2" width="22.9" height="2.7"/>
+		<rect x="20" y="37.2" class="st2" width="25" height="2.7"/>
+		<rect x="20" y="42.9" class="st2" width="12.5" height="2.7"/>
 	</g>
-	<rect x="20" y="31.5" class="st2" width="22.9" height="2.7"/>
-	<rect x="20" y="37.2" class="st2" width="25" height="2.7"/>
-	<rect x="20" y="42.9" class="st2" width="12.5" height="2.7"/>
 	<g>
 		<defs>
 			<polygon id="SVGID_3_" points="36.3,12.5 39,12.5 40,9 38,9 36,4 31,3 27,5 24.7,12.5 27.1,12.5 24,24 25,27 28,29 32,28 			"/>
