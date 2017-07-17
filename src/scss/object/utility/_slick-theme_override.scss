@@ -68,6 +68,7 @@
   padding: 0;
   margin-top: -7.5px;
   -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: transparent;
   border: none;
@@ -117,6 +118,7 @@
   -webkit-box-shadow: $shadow-carousel_arrow;
   box-shadow: $shadow-carousel_arrow;
   -webkit-transition: $transition-carousel_arrow;
+  -o-transition: $transition-carousel_arrow;
   transition: $transition-carousel_arrow;
 }
 [dir='rtl'] .slick-prev:before {
@@ -141,6 +143,7 @@
   -webkit-box-shadow: $shadow-carousel_arrow;
   box-shadow: $shadow-carousel_arrow;
   -webkit-transition: $transition-carousel_arrow;
+  -o-transition: $transition-carousel_arrow;
   transition: $transition-carousel_arrow;
 }
 [dir='rtl'] .slick-next:before {

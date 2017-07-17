@@ -17,9 +17,11 @@
 .c-carousel__title {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   height: 40px;
 }
@@ -35,6 +37,7 @@
 .c-carousel-detail__image {
   width: 100%;
   -webkit-transition: $transition-carousel_mask;
+  -o-transition: $transition-carousel_mask;
   transition: $transition-carousel_mask;
 }
 .c-carousel-detail-mask {
@@ -46,6 +49,7 @@
   margin-left: -75%;
   background-color: $color-green;
   -webkit-transition: $transition-carousel_mask;
+  -o-transition: $transition-carousel_mask;
   transition: $transition-carousel_mask;
   &:before {
     position: absolute;
@@ -58,6 +62,7 @@
     -webkit-box-shadow: $shadow-carousel_arrow;
     box-shadow: $shadow-carousel_arrow;
     -webkit-transform: skewY(-45deg);
+    -ms-transform: skewY(-45deg);
     transform: skewY(-45deg);
   }
   &:after {
@@ -73,9 +78,11 @@
 .c-carousel-detail-mask__summary {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   height: inherit;
   margin-top: -.75em;
@@ -98,12 +105,15 @@
 .c-carousel__link {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
   justify-content: flex-end;
   height: 40px;
 }
