@@ -150,6 +150,7 @@ $(window).on('load' , function(){
       $(this).toggleClass('is-view');
     });
   }
+
 });
 
 
