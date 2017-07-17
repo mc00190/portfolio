@@ -172,7 +172,7 @@ $(function(){
     $(this).addClass('is-active');
     $plan.removeClass('is-show');
 
-    $($(this).find('a').attr('href')).addClass('is-show');
+    $($(this).attr('href')).addClass('is-show');
     return false;
 
   });

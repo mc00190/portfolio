@@ -18,6 +18,9 @@
   box-shadow: $shadow-graph;
 }
 .c-toggle__button {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -33,48 +36,53 @@
   width: auto;
   height: auto;
   cursor: pointer;
-  a {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    width: inherit;
-    width: 300px;
-    height: 60px;
-    border: 1px solid $color-white;
-  }
+
+  width: 300px;
+  height: 60px;
+  border: 1px solid $color-white;
+  // a {
+  //   -webkit-box-sizing: border-box;
+  //   box-sizing: border-box;
+  //   display: -webkit-box;
+  //   display: -ms-flexbox;
+  //   display: -webkit-flex;
+  //   display: flex;
+  //   -webkit-box-align: center;
+  //   -ms-flex-align: center;
+  //   -webkit-align-items: center;
+  //   align-items: center;
+  //   -webkit-box-pack: center;
+  //   -ms-flex-pack: center;
+  //   -webkit-justify-content: center;
+  //   justify-content: center;
+  //   width: 300px;
+  //   height: 60px;
+  //   border: 1px solid $color-white;
+  // }
   &-01 {
     @extend .c-toggle__button;
-    a {
-      border-radius: $radius-button 0 0 $radius-button;
-      border-right: none;
-    }
+    border-radius: $radius-button 0 0 $radius-button;
+    border-right: none;
+    // a {
+    //   border-radius: $radius-button 0 0 $radius-button;
+    //   border-right: none;
+    // }
   }
   &-02 {
     @extend .c-toggle__button;
   }
   &-03 {
     @extend .c-toggle__button;
-    a {
-      border-radius: 0 $radius-button $radius-button 0;
-      border-left: none;
-    }
+    border-radius: 0 $radius-button $radius-button 0;
+    border-left: none;
+    // a {
+    //   border-radius: 0 $radius-button $radius-button 0;
+    //   border-left: none;
+    // }
   }
   &.is-active {
-    a {
-      color: $color-green;
-      background-color: $color-white;
-    }
+    color: $color-green;
+    background-color: $color-white;
   }
 }
 
@@ -84,33 +92,38 @@
     width: 100%;
   }
   .c-toggle__button {
-    width: auto;
-    height: auto;
-    a {
-      height: 45px;
-    }
+    width: 100%;
+    height: 45px;
+    // a {
+    //   height: 45px;
+    // }
     &-01 {
       width: 100%;
-      a {
-        width: 100%;
-        border-radius: $radius-button $radius-button 0 0;
-        border-right: 1px solid $color-white;
-        border-bottom: none;
-      }
+      border-radius: $radius-button $radius-button 0 0;
+      border-right: 1px solid $color-white;
+      border-bottom: none;
+      // a {
+      //   width: 100%;
+      //   border-radius: $radius-button $radius-button 0 0;
+      //   border-right: 1px solid $color-white;
+      //   border-bottom: none;
+      // }
     }
     &-02 {
       width: 50%;
-      a {
-        width: 100%;
-        border-radius: 0  0 0 $radius-button;
-      }
+      border-radius: 0  0 0 $radius-button;
+      // a {
+      //   width: 100%;
+      //   border-radius: 0  0 0 $radius-button;
+      // }
     }
     &-03 {
       width: 50%;
-      a {
-        width: 100%;
-        border-radius: 0 0 $radius-button 0;
-      }
+      border-radius: 0 0 $radius-button 0;
+      // a {
+      //   width: 100%;
+      //   border-radius: 0 0 $radius-button 0;
+      // }
     }
   }
 }
