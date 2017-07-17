@@ -141,35 +141,14 @@ $(window).on('load' , function(){
   });
 
   var ua = navigator.userAgent;
-  if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
-
-    $('body').addClass('mobile');
-    $('.js-carousel-detail').click(function () {
+  if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+    $('.js-carousel-detail').click (function(){
       $(this).toggleClass('is-view');
     });
-
   } else {
-
-    $('.js-carousel-detail').hover(function () {
-
-      $(this).find('.c-carousel-detail__image').animate({
-          'marginLeft': '75%'
-      }, 500);
-      $(this).find('.c-carousel-detail-mask').animate({
-          'marginLeft': '0'
-      }, 500);
-
-    } , function() {
-
-      $(this).find('.c-carousel-detail__image').animate({
-          'marginLeft': '0'
-      }, 500);
-      $(this).find('.c-carousel-detail-mask').animate({
-          'marginLeft': '-75%'
-      }, 500);
-
+    $('.js-carousel-detail').hover (function(){
+      $(this).toggleClass('is-view');
     });
-
   }
 
 });
