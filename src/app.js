@@ -61,20 +61,6 @@ function chartView(){
   });
 }
 
-//hoverSlide
-$(function(){
-  var ua = navigator.userAgent;
-  if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
-    $('.js-carousel-detail').click (function(){
-    $(this).toggleClass('is-view');
-  });
-} else {
-  $('.js-carousel-detail').hover (function(){
-    $(this).toggleClass('is-view');
-  });
-}
-});
-
 //parallax
 $(function(){
 
@@ -153,6 +139,20 @@ $(window).on('load' , function(){
       }
     }]
   });
+});
+
+//carouselHover
+$(function(){
+  var ua = navigator.userAgent;
+  if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+    $('.js-carousel-detail').click (function(){
+    $(this).toggleClass('is-view');
+  });
+} else {
+  $('.js-carousel-detail').hover (function(){
+    $(this).toggleClass('is-view');
+  });
+}
 });
 
 //tab
