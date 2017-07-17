@@ -11,16 +11,6 @@ var $ = require('jquery');
 require('chart.js');
 require('slick-carousel');
 
-//UA
-$(function(){
-  var ua = navigator.userAgent;
-  if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
-    $('body').addClass('mobile');
-  } else {
-    $('body').addClass('pc');
-  }
-});
-
 //chart
 function chartView(){
   var barChartData = {
@@ -150,7 +140,7 @@ $(window).on('load' , function(){
     }]
   });
 
-  $('.mobile .js-carousel-detail').click (function(){
+  $('.js-carousel-detail').click (function(){
     $(this).toggleClass('is-view');
   });
 
