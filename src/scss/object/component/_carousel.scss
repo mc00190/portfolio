@@ -90,14 +90,6 @@
   color: $color-white;
   line-height: 1.4;
 }
-.c-carousel-detail.is-view {
-  .c-carousel-detail-mask {
-    margin-left: 0;
-  }
-  .c-carousel-detail__image {
-    margin-left: 75%;
-  }
-}
 .c-carousel__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,7 +106,19 @@
   height: 40px;
 }
 
+//ua
+.pc .c-carousel-detail:hover {
+  .c-carousel-detail-mask {
+    margin-left: 0;
+  }
+  .c-carousel-detail__image {
+    margin-left: 75%;
+  }
+}
+
 /* smartdevice */
+
+//responsive
 @media screen and (max-width: 667px) {
   .c-carousel {
     margin: 0 6.25px $space-xs;
@@ -126,5 +130,15 @@
       width: 16px;
       height: 16px;
     }
+  }
+}
+
+//ua
+.mobile .c-carousel-detail.is-view {
+  .c-carousel-detail-mask {
+    margin-left: 0;
+  }
+  .c-carousel-detail__image {
+    margin-left: 75%;
   }
 }
