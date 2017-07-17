@@ -6,6 +6,7 @@
 .p-merit-inner {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   margin-bottom: $space-s;
 }
@@ -25,6 +26,7 @@
   box-shadow: $shadow-graph;
   opacity: 0;
   -webkit-transition: $transition-graph;
+  -o-transition: $transition-graph;
   transition: $transition-graph;
   &.is-view {
     opacity: 1;
@@ -33,11 +35,14 @@
 .p-merit-result {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   width: 460px;
   .c-heading--small {
