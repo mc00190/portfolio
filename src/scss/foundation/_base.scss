@@ -20,6 +20,7 @@ p {
 a {
   color: $color-green;
   -webkit-transition: $transition-link;
+  -o-transition: $transition-link;
   transition: $transition-link;
   &:hover {
     opacity: .7;

@@ -2,14 +2,16 @@
   height: 50px;
   padding-bottom: $space-m;
   text-align: center;
-  background-color: $color-white;
+  background-color: $color-light_gray;
 }
 .l-footer-list {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-bottom: $space-xs;
 }

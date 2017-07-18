@@ -2,13 +2,11 @@
   .c-heading--large {
     text-align: center;
   }
-  .c-text--large {
-    text-align: center;
-  }
 }
 .p-tab-content {
   height: 380px;
   margin-bottom: $space-m;
+  text-align: center;
 }
 .p-tab-plan {
   display: none;
@@ -70,7 +68,7 @@
   color: $color-white;
   text-decoration: none;
 }
-.p-tab .c-toggle .is-active {
+.p-tab .c-toggle .is-active a {
   color: $color-green;
 }
 
@@ -102,8 +100,8 @@
 }
 
 @media screen and (max-width: 375px) {
-  .p-tab {
-    .c-text--large {
+  .p-tab-content {
+    .p-tab-plan__summary {
       text-align: left;
     }
     .p-tab-plan__recommend {

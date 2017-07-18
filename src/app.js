@@ -17,11 +17,11 @@ function chartView(){
       labels: ['2015/09', '2015/12', '2016/03', '2016/06', '2016/09', '2016/12', '2017/03', '2017/06'],
       datasets: [{
           label: '業務委託',
-          backgroundColor: "rgba(249, 182, 48, 1)",
+          backgroundColor: "rgba(233, 88, 85, 1)",
           data: [2, 2, 3, 3, 4, 4, 5, 5],
       }, {
           label: '正社員',
-          backgroundColor: "rgba(249, 182, 48, .5)",
+          backgroundColor: "rgba(233, 88, 85, .5)",
           data: [0, 0, 0, 8, 7, 6, 7, 8],
       }]
   };
@@ -30,9 +30,19 @@ function chartView(){
     type: 'bar',
     data: barChartData,
     options: {
+      legend: {
+          display: true,
+          labels: {
+              fontColor: '#888888',
+              fontSize: 10
+          }
+      },
       tooltips: {
         mode: 'index',
-        intersect: false
+        intersect: false,
+        backgroundColor: 'rgba(136,136,136,0.9)',
+        titleFontSize: 10,
+        bodyFontSize: 10
       },
       responsive: true,
       scales: {
@@ -172,7 +182,7 @@ $(function(){
     $(this).addClass('is-active');
     $plan.removeClass('is-show');
 
-    $($(this).attr('href')).addClass('is-show');
+    $($(this).find('a').attr('href')).addClass('is-show');
     return false;
 
   });
