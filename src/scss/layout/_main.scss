@@ -4,6 +4,7 @@
   width: 100%;
   height: 315px;
   background-image: url("../img/l-visual.jpg");
+  background-position: center left;
 }
 .l-wrapper {
   overflow-x: hidden;
@@ -53,6 +54,7 @@
   .l-visual {
     width: 100%;
     height: 150px;
+    background-size: 100%;
   }
   .l-wrapper {
     margin-top: 150px;

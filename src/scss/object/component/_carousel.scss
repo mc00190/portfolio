@@ -54,19 +54,17 @@
   transition: $transition-carousel_mask;
 }
 .c-carousel-detail-mask__summary {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  display: table;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   height: inherit;
-  margin-top: -.75em;
   padding: 10px $space-xs;
   color: $color-white;
   line-height: 1.4;
+  span {
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 .c-carousel__link {
   display: -webkit-box;
