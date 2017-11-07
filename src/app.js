@@ -83,29 +83,56 @@ $(function(){
 
   $(window).on('load scroll', function () {
 
+    //Front Engineer
     var scrollPx = $(this).scrollTop();
     var aboutTop = $('#about').offset().top;
     var directionTop = $('#direction').offset().top;
     var meritTop = $('#merit').offset().top;
     var cordingTop = $('#cording').offset().top;
-    var planTop = $('#plan').offset().top;
     var flag = $('.js-graph').hasClass('is-view');
 
-    if(scrollPx >= planTop) {
-      $cardCorder.addClass('is-move');
-    } else if (scrollPx >= cordingTop - 150) {
-      $cardCorder.removeClass('is-move');
-    } else if (scrollPx >= meritTop - 150 && !flag) {
+    //Director
+    // var scrollPx = $(this).scrollTop();
+    // var aboutTop = $('#about').offset().top;
+    // var directionTop = $('#direction').offset().top;
+    // var meritTop = $('#merit').offset().top;
+    // var cordingTop = $('#cording').offset().top;
+    // var planTop = $('#plan').offset().top;
+    // var flag = $('.js-graph').hasClass('is-view');
+
+    //Front Engineer
+    if (scrollPx >= meritTop - 150 && !flag) {
       $('.js-graph').addClass('is-view');
       chartView();
-    } else if (scrollPx >= meritTop) {
+    } else if(scrollPx >= meritTop) {
+      $cardDirector.addClass('is-move');
+    } else if (scrollPx >= directionTop - 150) {
+      $cardDirector.removeClass('is-move');
+    } else if (scrollPx >= directionTop - 300) {
       $cardDirector.addClass('is-move');
       $cardCorder.addClass('is-move');
-    } else if (scrollPx >= directionTop - 300) {
-      $cardDirector.removeClass('is-move');
+    } else if (scrollPx >= cordingTop - 300) {
+      $cardCorder.removeClass('is-move');
     } else if (scrollPx >= aboutTop) {
-      $cardDirector.addClass('is-move');
+      $cardCorder.addClass('is-move');
     }
+
+    //Director
+    // if(scrollPx >= planTop) {
+    //   $cardCorder.addClass('is-move');
+    // } else if (scrollPx >= cordingTop - 150) {
+    //   $cardCorder.removeClass('is-move');
+    // } else if (scrollPx >= meritTop - 150 && !flag) {
+    //   $('.js-graph').addClass('is-view');
+    //   chartView();
+    // } else if (scrollPx >= meritTop) {
+    //   $cardDirector.addClass('is-move');
+    //   $cardCorder.addClass('is-move');
+    // } else if (scrollPx >= directionTop - 300) {
+    //   $cardDirector.removeClass('is-move');
+    // } else if (scrollPx >= aboutTop) {
+    //   $cardDirector.addClass('is-move');
+    // }
 
   });
 
